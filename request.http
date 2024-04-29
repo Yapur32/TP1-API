@@ -1,0 +1,28 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "HOLA123",
+    "contraseña": "qwerty123",
+    "email": "asdadfz@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/662d307724b39b1c6e79d39f HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/662d307724b39b1c6e79d39f HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "Yapur",
+    "contraseña": "hola1234",
+    "email": "yapur@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/users/662d3f98fbe9e466ad706701 HTTP/1.1
